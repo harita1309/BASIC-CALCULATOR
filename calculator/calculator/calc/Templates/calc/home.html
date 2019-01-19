@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<form action = {% url 'calc' %}>
+	<div class="radio">
+		<label><input type="radio" name="optradio" value = '+' checked>plus</label>
+	</div>
+	<div class="radio">
+		<label><input type="radio" name="optradio" value = '-'>minus</label>
+	</div>
+	<div class="radio" value='*'>
+		<label><input type="radio" name="optradio" value = '*'>multiply</label>
+	</div>
+	<div class="radio disabled">
+		<label><input type="radio" name="optradio" value = '/'>division</label>
+	</div>
+	<input name='field1'></input>
+	<input name='field2'></input>
+	<button type='submit' class='btn btn-primary'>Submit</button>
+</form>
